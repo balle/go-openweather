@@ -1,0 +1,4 @@
+*.key
+debug.test
+.vscode
+*.exe

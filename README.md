@@ -15,7 +15,7 @@ go get github.com/EricNeid/openweather
 
 Is available on ``godoc``:
 
-<https://godoc.org/github.com/EricNeid/openweather>
+<https://godoc.org/github.com/EricNeid/go-openweather>
 
 ## Examples
 

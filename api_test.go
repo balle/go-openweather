@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"EricNeid/go-openweather/internal/verify"
+	"github.com/EricNeid/go-openweather/internal/verify"
 )
 
 const apiKeyFile = "testdata/api.key"

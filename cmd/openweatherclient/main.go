@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"EricNeid/go-openweather"
+	"github.com/EricNeid/go-openweather"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package openweather
 import (
 	"testing"
 
-	"EricNeid/go-openweather/internal/verify"
+	"github.com/EricNeid/go-openweather/internal/verify"
 )
 
 func TestNewQueryForCity(t *testing.T) {

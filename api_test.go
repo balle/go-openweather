@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/EricNeid/go-openweather/internal/test"
+	"EricNeid/go-openweather/internal/verify"
 )
 
 const apiKeyFile = "testdata/api.key"
@@ -29,8 +29,8 @@ func TestForecastRaw(t *testing.T) {
 	// action
 	resp, err := q.DailyForecast5Raw()
 	// verify
-	test.Ok(t, err)
-	test.Assert(t, len(resp) > 0, "Received empty response")
+	verify.Ok(t, err)
+	verify.Assert(t, len(resp) > 0, "Received empty response")
 }
 
 func TestWeatherRaw(t *testing.T) {
@@ -39,8 +39,8 @@ func TestWeatherRaw(t *testing.T) {
 	// action
 	resp, err := q.WeatherRaw()
 	// verify
-	test.Ok(t, err)
-	test.Assert(t, len(resp) > 0, "Received empty response")
+	verify.Ok(t, err)
+	verify.Assert(t, len(resp) > 0, "Received empty response")
 }
 
 func TestWeather(t *testing.T) {
@@ -49,8 +49,8 @@ func TestWeather(t *testing.T) {
 	// action
 	data, err := q.Weather()
 	// verify
-	test.Ok(t, err)
-	test.Equals(t, "Berlin", data.Name)
+	verify.Ok(t, err)
+	verify.Equals(t, "Berlin", data.Name)
 }
 
 func TestDailyForecast(t *testing.T) {
@@ -59,6 +59,6 @@ func TestDailyForecast(t *testing.T) {
 	// action
 	data, err := q.DailyForecast5()
 	// verify
-	test.Ok(t, err)
-	test.Equals(t, "Berlin", data.City.Name)
+	verify.Ok(t, err)
+	verify.Equals(t, "Berlin", data.City.Name)
 }

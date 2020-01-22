@@ -1,3 +1,3 @@
-module github.com/EricNeid/go-openweather
+module EricNeid/go-openweather
 
 go 1.13

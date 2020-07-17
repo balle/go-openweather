@@ -9,7 +9,7 @@ import (
 func TestNewQueryForCity(t *testing.T) {
 	// arrange
 	apiKey := "testKey"
-	location := cityBerlin
+	location := "Berlin,de"
 	// action
 	q := NewQueryForCity(apiKey, location)
 	// verify

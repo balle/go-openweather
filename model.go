@@ -48,8 +48,8 @@ type CurrentWeather struct {
 // DailyForecast5 represents unmarshalled data from openweathermap
 // for the 5 days forecast weather API (http://openweathermap.org/forecast5).
 type DailyForecast5 struct {
-	Cod     string  `json:"cod"`
-	Message float64 `json:"message"`
+	Cod     int    `json:"cod"`
+	Message string `json:"message"`
 	City    struct {
 		GeonameID  int     `json:"geoname_id"`
 		Name       string  `json:"name"`
